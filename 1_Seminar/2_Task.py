@@ -24,7 +24,7 @@ def input_data_check(col):
 
 
 def condition_check(xyz_check):
-    if (not (xyz_check[0] or xyz_check[1] or xyz_check[2])) == (not xyz_check[0] and not xyz_check[1] and not xyz_check[2]):
+    if (not (xyz_check[0] or xyz_check[1] or xyz_check[2])) == (not (xyz_check[0]) and not (xyz_check[1]) and not (xyz_check[2])):
         print('ИСТИННО!')
     else:
         print('НЕТ, НЕ ИСТИННО!')
