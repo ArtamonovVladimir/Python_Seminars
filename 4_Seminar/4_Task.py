@@ -35,14 +35,14 @@ def funct(number, coefs):
     var = ['*x^']*(number-1) + ['*x']
     function = [[a, b, c] for a, b, c in zip_longest(
         coefs, var, range(number, 1, -1), fillvalue='') if a != 0]
-    print(function)
+    # print(function)
     for i in function:
         i.append(' + ')
-    print(function)
+    # print(function)
     function = list(chain(*function))
-    print(function)
+    # print(function)
     function[-1] = ' = 0'
-    print(function)
+    # print(function)
     delimiter = ""
     return delimiter.join(map(str, function))
 
