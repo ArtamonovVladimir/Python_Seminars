@@ -22,9 +22,12 @@ print(orbits)
 def find_farthest_orbit(lst):
     planets_or = []
     for i in lst:
-        x = i[0]*i[1]*const_pi
-        planets_or.append(x)
-    # print(planets_or)
+        if i[0] != i[1]:
+            x = i[0]*i[1]*const_pi
+            planets_or.append(x)
+        else:
+            planets_or.append(0)
+    print(planets_or)
     return planets_or.index(max(planets_or))
 
 
