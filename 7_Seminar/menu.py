@@ -13,7 +13,7 @@ def print_menu():
 
 def start():
     phones = {}
-    phones = opens(phones)
+    # phones = opens(phones)
     menu_choice = 0
     print_menu()
 
